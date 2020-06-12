@@ -8,6 +8,7 @@ import { MainScreenComponent } from './Components/main-screen/main-screen.compon
 import { AboutUsScreenComponent } from './Components/about-us-screen/about-us-screen.component';
 import { NavbarComponentComponent } from './Components/navbar-component/navbar-component.component';
 import { FooterComponentComponent } from './Components/footer-component/footer-component.component';
+import { LoginScreenComponent } from './Components/login-screen/login-screen.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FooterComponentComponent } from './Components/footer-component/footer-c
     MainScreenComponent,
     AboutUsScreenComponent,
     NavbarComponentComponent,
-    FooterComponentComponent
+    FooterComponentComponent,
+    LoginScreenComponent
   ],
   imports: [
     BrowserModule,
