@@ -10,8 +10,25 @@ export class UserListScreenComponent implements OnInit
 {
   userList : any = [];
 
+
   constructor( private userService : UserService ) { }
   
+  clickOnDelete(userId){
+    this.deleteUsers(userId);
+
+  }
+
+  deleteUsers(userId){
+    this.userService.deleteUser(userId).subscribe(
+      (data) => {
+          this.fetchUsers();
+      },
+      (error) => {
+          console.log('Error: ', error);
+      }
+  );
+  }
+
   fetchUsers()
   {
     this.userService.getuserlist().subscribe(

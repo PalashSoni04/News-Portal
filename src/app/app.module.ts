@@ -12,6 +12,8 @@ import { NavbarComponentComponent } from './Components/navbar-component/navbar-c
 import { FooterComponentComponent } from './Components/footer-component/footer-component.component';
 import { LoginScreenComponent } from './Components/login-screen/login-screen.component';
 import { UserListScreenComponent } from './Components/user-list-screen/user-list-screen.component';
+import { NewsListScreenComponent } from './Components/news-list-screen/news-list-screen.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { UserListScreenComponent } from './Components/user-list-screen/user-list
     NavbarComponentComponent,
     FooterComponentComponent,
     LoginScreenComponent,
-    UserListScreenComponent
+    UserListScreenComponent,
+    NewsListScreenComponent
   ],
   imports: [
     BrowserModule,

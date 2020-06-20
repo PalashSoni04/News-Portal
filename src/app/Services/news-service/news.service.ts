@@ -3,10 +3,11 @@ import { throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { DataManagerService } from '../data-manager-service/data-manager.service';
 import { HttpClient } from '@angular/common/http';
+
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class NewsService {
 
   baseurl : String = null;
 
@@ -28,15 +29,14 @@ export class UserService {
     this.baseurl = dataManager.getServerHostname(); 
   
   }
-  
-  getuserlist()
+
+  getNewslist()
   {
-    return this.httpClient.get(`${this.baseurl}/Users/`).pipe(retry(1), catchError(this.handleError));
+    return this.httpClient.get(`${this.baseurl}/News/`).pipe(retry(1), catchError(this.handleError));
   } 
 
-  deleteUser(userId)
+  deleteNews(newsId)
   {
-    return this.httpClient.delete(`${this.baseurl}/User/${userId}`).pipe(retry(1), catchError(this.handleError));
-  } 
-
+    return this.httpClient.delete(`${this.baseurl}/News/${newsId}`).pipe(retry(1), catchError(this.handleError));
+  }
 }

@@ -1,45 +1,35 @@
-.navbar-top {
-    background: #4D5061;
-    border-bottom: 4px solid #60B078;
-    color: #FFF;
+* {
+    font-family: Helvetica, "Helvetica Neue", "Open Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: .9rem;
+    margin: 0;
 }
 
-.text-white{
-    color:#fff;
+.top-block-header {
+    background-color:white;
+    color:#0e0e0e;
+    padding:27px;
 }
 
-.navbar-doublerow > .navbar{
-	display: block;
-	padding: 0px auto;
-	margin: 0px auto;
-	min-height: 25px;
+.navbar-brand {
+    font-size: 24px;
+    color: black;
+    font-style: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform:uppercase;
+    font-weight:400;
+    line-height:24px;
+    text-align:left;
 }
 
-/*Down nav*/
-.navbar-doublerow .navbar-down .navbar-brand {
-    /*navbar brand*/
-	padding: 0px auto;
-	float: left;
-	color: #60B078;
-	font-size: 30px;
+.navbar {
+    background-color: #0e0e0e;
+    color:white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 40px;
 }
-.navbar-doublerow .navbar-down ul>li>a{
-    /*Menu items*/
-	font-size: 15px;
-	color: #000;
-}
-.navbar-doublerow .navbar-down ul>li>a:hover{
-    /*menu hover*/
-	border-bottom: 1px solid #60B078;
-	color: #60B078;
-}
-
-/*.navbar {
-    min-height: 80px;
-  }
-  
-  .navbar-brand {
-    padding: 0 15px;
-    height: 80px;
-    line-height: 80px;
-  }*/
