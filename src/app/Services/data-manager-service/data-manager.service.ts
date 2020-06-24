@@ -1,16 +1,14 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root',
 })
 export class DataManagerService {
+    serverHostname: String = 'http://localhost:8000';
 
-  serverHostname : String = "http://localhost:8000";
+    constructor() {}
 
-  constructor() { }
-
-  getServerHostname()
-  {
-      return this.serverHostname;
-  }
+    getServerHostname() {
+        return this.serverHostname;
+    }
 }
