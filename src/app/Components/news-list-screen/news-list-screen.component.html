@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card p-4 rounded shadow">
     <div class="py-2" style="font-size: x-large;">
         <a class="text-black ml-5"><b>NEWS LIST</b></a>
         <button class="btn btn-sm btn-info m-1 float-right" style="border-radius: 15px;">
@@ -10,9 +10,9 @@
             <thead>
                 <tr class="text-center">
                     <th scope="col">Id</th>
-                    <th scope="col">News Title</th>
+                    <th scope="col">Title</th>
                     <th scope="col">Publisher</th>
-                    <th scope="col">News Discription</th>
+                    <th scope="col">Discription</th>
                     <th scope="col">Image</th>
                     <th scope="col">Status</th>
                     <th scope="col">Action</th>
@@ -27,13 +27,13 @@
                     <td>{{ news.image }}</td>
                     <td>{{ news.status }}</td>
                     <td>
-                        <button class="btn" style="color: rgb(9, 216, 9); font-size: 18px;" (click)="clickOnUpdateStatus(news.id, 'Active')">
+                        <button class="btn" placement="right" ngbTooltip="Acitve" style="color: rgb(9, 216, 9); font-size: 18px;" (click)="clickOnUpdateStatus(news.id, 'Active')">
                             <i class="fa fa-check"></i>
                         </button>
-                        <button class="btn" style="color: red; font-size: 18px;" (click)="clickOnUpdateStatus(news.id, 'InActive')">
+                        <button class="btn" placement="right" ngbTooltip="InActive" style="color: red; font-size: 18px;" (click)="clickOnUpdateStatus(news.id, 'InActive')">
                             <i class="fa fa-times"></i>
                         </button>
-                        <button class="btn" style="color: red; font-size: 18px;" (click)="clickOnDelete(news.id)">
+                        <button class="btn" placement="right" ngbTooltip="Delete" style="color: red; font-size: 18px;" (click)="clickOnDelete(news.id)">
                             <i class="fa fa-trash"></i>
                         </button>
                     </td>
